@@ -50,10 +50,12 @@ nav {
                 color: $primary-color-font;
                 text-decoration: none;
             }
-            &:hover{
-                background-color:#d39f7e;
+
+            &:hover {
+                background-color: #d39f7e;
             }
-            &:active{
+
+            &:active {
                 background-color: #333333;
             }
         }
@@ -109,9 +111,11 @@ nav {
     }
 
 }
-#About-me{
+
+#About-me {
     background-color: #000000;
-    >h2{
+
+    >h2 {
         text-align: center;
         color: white;
     }
