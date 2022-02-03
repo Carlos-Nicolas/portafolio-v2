@@ -1,0 +1,12 @@
+*{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+
+    &:before,
+    &:after{
+        border: 0px;
+        margin: 0px;
+        padding: 0px;
+    }
+}
