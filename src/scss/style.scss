@@ -6,7 +6,7 @@
 
 html {
     font-family: $font-family;
-    background-color: $backgound-first-secction;
+    // background-color: $backgound-first-secction;
 }
 
 body {
@@ -98,6 +98,8 @@ nav {
             display: flex;
             justify-content: space-between;
             width: 40%;
+            padding-inline-start: 0;
+            margin: 0%;
 
             li {
                 text-decoration: none;
@@ -114,9 +116,75 @@ nav {
 
 #About-me {
     background-color: #000000;
+    padding: 20px;
 
-    >h2 {
-        text-align: center;
-        color: white;
+    .timeline {
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+
+        &-item {
+            padding-bottom: 40px;
+            position: relative;
+            color: #ffffff;
+
+            &:nth-child(odd) {
+                text-align: right;
+                @include calc(padding-right, '50% + 30px');
+            }
+
+            &:nth-child(even) {
+                text-align: left;
+                @include calc(padding-left, '50% + 30px');
+            }
+
+            &-content {
+                padding: 15px;
+                border-radius: 20px;
+                box-shadow: 0px 0px 14px 8px #d39f7e;
+
+                >h3,
+                h4 {
+                    margin: 0;
+                }
+
+                p {
+                    font-size: 14px;
+                    font-weight: normal;
+                }
+            }
+
+            &-dot {
+                height: 16px;
+                width: 16px;
+                border-radius: 50%;
+                background-color: $title-color-font;
+                position: absolute;
+                top: -9px;
+                @include calc(left, '50% - 8px')
+            }
+
+            &-date {
+                font-size: 16px;
+                color: $title-color-font;
+                font-weight: bold;
+                margin: 6px 0 4px;
+            }
+
+            &:nth-last-child {
+                padding-bottom: 0;
+            }
+        }
+
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        width: 2px;
+        // height: 100%;
+        background-color: $title-color-font;
+        @include calc( left, '50% - 1px');
+        // margin-bottom: 20px;
     }
 }
