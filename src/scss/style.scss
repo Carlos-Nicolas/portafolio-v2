@@ -66,10 +66,13 @@ nav {
 #principal {
     height: 100%;
     width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 100px 0 80px 0;
 
-    #background-principal-section {
-        width: inherit;
-    }
+    // background-image: url("/src/img/principal-backgoud.jpeg") black;
+    background-color: #000000;
 
     .card-presentation {
         height: 400px;
@@ -86,6 +89,7 @@ nav {
             width: 150px;
             height: 150px;
             border-radius: 50%;
+            object-fit: cover;
         }
 
         h3,
@@ -115,8 +119,8 @@ nav {
 }
 
 #About-me {
-    background-color: #000000;
-    padding: 20px;
+    background-color: #202020;
+    padding: 60px;
 
     .timeline {
         margin: auto;
@@ -186,5 +190,14 @@ nav {
         background-color: $title-color-font;
         @include calc( left, '50% - 1px');
         // margin-bottom: 20px;
+    }
+}
+
+.skills{
+    background-color: #5e5b5b;
+    display: flex;
+    padding: 40px;
+    &-card{
+        border: 1px solid pink;
     }
 }
