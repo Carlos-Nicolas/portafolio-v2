@@ -10,6 +10,11 @@ body {
 }
 
 /* line 16, src/scss/style.scss */
+h3 {
+  margin: 0;
+}
+
+/* line 20, src/scss/style.scss */
 nav {
   background-color: #000000;
   width: 100vw;
@@ -23,20 +28,20 @@ nav {
   z-index: 9999;
 }
 
-/* line 28, src/scss/style.scss */
+/* line 32, src/scss/style.scss */
 nav h3 {
   color: #ff2b06;
   padding: 12px;
 }
 
-/* line 32, src/scss/style.scss */
+/* line 36, src/scss/style.scss */
 nav h3 i {
   display: inline;
   vertical-align: middle;
   font-size: 18px;
 }
 
-/* line 39, src/scss/style.scss */
+/* line 43, src/scss/style.scss */
 nav ul {
   display: flex;
   list-style: none;
@@ -44,28 +49,28 @@ nav ul {
   padding: inherit;
 }
 
-/* line 46, src/scss/style.scss */
+/* line 50, src/scss/style.scss */
 nav ul li {
   padding: 12px;
 }
 
-/* line 49, src/scss/style.scss */
+/* line 53, src/scss/style.scss */
 nav ul li a {
   color: #ffffff;
   text-decoration: none;
 }
 
-/* line 54, src/scss/style.scss */
+/* line 58, src/scss/style.scss */
 nav ul li:hover {
   background-color: #d39f7e;
 }
 
-/* line 58, src/scss/style.scss */
+/* line 62, src/scss/style.scss */
 nav ul li:active {
   background-color: #333333;
 }
 
-/* line 66, src/scss/style.scss */
+/* line 70, src/scss/style.scss */
 #principal {
   height: 100%;
   width: 100%;
@@ -76,7 +81,7 @@ nav ul li:active {
   background-color: #000000;
 }
 
-/* line 77, src/scss/style.scss */
+/* line 82, src/scss/style.scss */
 #principal .card-presentation {
   height: 400px;
   width: 300px;
@@ -89,7 +94,7 @@ nav ul li:active {
   box-shadow: 0px 0px 14px 8px #D39F7E;
 }
 
-/* line 88, src/scss/style.scss */
+/* line 93, src/scss/style.scss */
 #principal .card-presentation img {
   width: 150px;
   height: 150px;
@@ -97,13 +102,13 @@ nav ul li:active {
   object-fit: cover;
 }
 
-/* line 95, src/scss/style.scss */
+/* line 100, src/scss/style.scss */
 #principal .card-presentation h3,
 #principal .card-presentation h4 {
   color: #ff2b06;
 }
 
-/* line 100, src/scss/style.scss */
+/* line 105, src/scss/style.scss */
 #principal .card-presentation > ul {
   list-style: none;
   display: flex;
@@ -113,24 +118,24 @@ nav ul li:active {
   margin: 0%;
 }
 
-/* line 108, src/scss/style.scss */
+/* line 113, src/scss/style.scss */
 #principal .card-presentation > ul li {
   text-decoration: none;
   font-size: 20px;
 }
 
-/* line 112, src/scss/style.scss */
+/* line 117, src/scss/style.scss */
 #principal .card-presentation > ul li a {
   color: #ff2b06;
 }
 
-/* line 121, src/scss/style.scss */
+/* line 126, src/scss/style.scss */
 #About-me {
   background-color: #202020;
   padding: 60px;
 }
 
-/* line 125, src/scss/style.scss */
+/* line 130, src/scss/style.scss */
 #About-me .timeline {
   margin: auto;
   display: flex;
@@ -138,14 +143,14 @@ nav ul li:active {
   position: relative;
 }
 
-/* line 131, src/scss/style.scss */
+/* line 136, src/scss/style.scss */
 #About-me .timeline-item {
   padding-bottom: 40px;
   position: relative;
   color: #ffffff;
 }
 
-/* line 136, src/scss/style.scss */
+/* line 141, src/scss/style.scss */
 #About-me .timeline-item:nth-child(odd) {
   text-align: right;
   padding-right: calc(50% + 30px);
@@ -153,7 +158,7 @@ nav ul li:active {
   padding-right: -webkit-calc(50% + 30px);
 }
 
-/* line 141, src/scss/style.scss */
+/* line 146, src/scss/style.scss */
 #About-me .timeline-item:nth-child(even) {
   text-align: left;
   padding-left: calc(50% + 30px);
@@ -161,26 +166,26 @@ nav ul li:active {
   padding-left: -webkit-calc(50% + 30px);
 }
 
-/* line 146, src/scss/style.scss */
+/* line 151, src/scss/style.scss */
 #About-me .timeline-item-content {
   padding: 15px;
   border-radius: 20px;
   box-shadow: 0px 0px 14px 8px #d39f7e;
 }
 
-/* line 151, src/scss/style.scss */
+/* line 156, src/scss/style.scss */
 #About-me .timeline-item-content > h3,
 #About-me .timeline-item-content h4 {
   margin: 0;
 }
 
-/* line 156, src/scss/style.scss */
+/* line 161, src/scss/style.scss */
 #About-me .timeline-item-content p {
   font-size: 14px;
   font-weight: normal;
 }
 
-/* line 162, src/scss/style.scss */
+/* line 167, src/scss/style.scss */
 #About-me .timeline-item-dot {
   height: 16px;
   width: 16px;
@@ -193,7 +198,7 @@ nav ul li:active {
   left: -webkit-calc(50% - 8px);
 }
 
-/* line 172, src/scss/style.scss */
+/* line 177, src/scss/style.scss */
 #About-me .timeline-item-date {
   font-size: 16px;
   color: #ff2b06;
@@ -201,7 +206,7 @@ nav ul li:active {
   margin: 6px 0 4px;
 }
 
-/* line 179, src/scss/style.scss */
+/* line 184, src/scss/style.scss */
 #About-me .timeline-item::before {
   content: "";
   position: absolute;
@@ -214,30 +219,30 @@ nav ul li:active {
   margin-bottom: 20px;
 }
 
-/* line 190, src/scss/style.scss */
+/* line 195, src/scss/style.scss */
 #About-me .timeline-item:nth-last-child {
   padding-bottom: 0;
 }
 
 @media (max-width: 760px) {
-  /* line 131, src/scss/style.scss */
+  /* line 136, src/scss/style.scss */
   #About-me .timeline-item {
     margin-bottom: 20px;
   }
-  /* line 197, src/scss/style.scss */
+  /* line 202, src/scss/style.scss */
   #About-me .timeline-item:nth-child(odd) {
     padding-right: 0;
     text-align: left;
   }
-  /* line 202, src/scss/style.scss */
+  /* line 207, src/scss/style.scss */
   #About-me .timeline-item:nth-child(odd), #About-me .timeline-item:nth-child(even) {
     padding-left: 35px;
   }
-  /* line 207, src/scss/style.scss */
+  /* line 212, src/scss/style.scss */
   #About-me .timeline-item-dot {
     left: 0;
   }
-  /* line 211, src/scss/style.scss */
+  /* line 216, src/scss/style.scss */
   #About-me .timeline-item::before {
     left: 7px;
     top: 9px;
@@ -245,36 +250,43 @@ nav ul li:active {
 }
 
 @media (max-width: 760px) and (max-width: 440px) {
-  /* line 217, src/scss/style.scss */
+  /* line 224, src/scss/style.scss */
   #About-me .timeline-item:nth-child(odd), #About-me .timeline-item:nth-child(even) {
     padding-left: 0;
   }
-  /* line 221, src/scss/style.scss */
+  /* line 229, src/scss/style.scss */
   #About-me .timeline-item-dot {
     display: none;
   }
-  /* line 224, src/scss/style.scss */
+  /* line 233, src/scss/style.scss */
   #About-me .timeline-item::before {
     display: none;
   }
 }
 
-/* line 244, src/scss/style.scss */
+/* line 253, src/scss/style.scss */
 .skills {
   background-color: #5e5b5b;
   display: flex;
   padding: 40px;
+  flex-direction: column;
+  text-align: center;
 }
 
-/* line 249, src/scss/style.scss */
+/* line 260, src/scss/style.scss */
+.skills-title {
+  font-size: 40px;
+  margin: 0px 0px 20px 0px;
+}
+
+/* line 265, src/scss/style.scss */
 .skills-toolbox {
   padding: 12px;
-  width: 100%;
   display: flex;
   justify-content: space-around;
 }
 
-/* line 256, src/scss/style.scss */
+/* line 270, src/scss/style.scss */
 .skills-toolbox-card {
   height: 150px;
   width: 150px;
@@ -284,21 +296,36 @@ nav ul li:active {
   justify-content: center;
   align-content: center;
   text-align: center;
+  box-shadow: #7eced3 0px 0px 14px 8px;
+  margin: 8px;
 }
 
-/* line 268, src/scss/style.scss */
+/* line 282, src/scss/style.scss */
 .skills-toolbox-card-logo {
   font-size: 64px;
 }
 
+@media (max-width: 760px) {
+  /* line 265, src/scss/style.scss */
+  .skills-toolbox {
+    box-shadow: #7eced3 0px 0px 14px 8px;
+  }
+  /* line 290, src/scss/style.scss */
+  .skills-toolbox-card {
+    box-shadow: none;
+  }
+}
+
 @media (max-width: 441px) {
-  /* line 249, src/scss/style.scss */
+  /* line 265, src/scss/style.scss */
   .skills-toolbox {
     flex-direction: column;
     align-items: center;
+    box-shadow: none;
   }
-  /* line 276, src/scss/style.scss */
+  /* line 301, src/scss/style.scss */
   .skills-toolbox-card {
     margin: 12px;
+    box-shadow: #7eced3 0px 0px 14px 8px;
   }
 }

@@ -13,6 +13,10 @@ body {
     margin: 0px;
 }
 
+h3 {
+    margin: 0;
+}
+
 nav {
     background-color: $nav-backround-color;
     width: 100vw;
@@ -71,7 +75,8 @@ nav {
     justify-content: center;
     padding: 100px 0 80px 0;
 
-    // background-image: url("/src/img/principal-backgoud.jpeg") black;
+    // background-image: url(../img/principal-backgoud.jpeg),#ffff;
+    // background-size: 100%;
     background-color: #000000;
 
     .card-presentation {
@@ -194,34 +199,38 @@ nav {
             @media (max-width: 760px) {
                 margin-bottom: 20px;
 
-                &:nth-child(odd){
+                &:nth-child(odd) {
                     padding-right: 0;
                     text-align: left;
                 }
 
                 &:nth-child(odd),
-                &:nth-child(even){
+                &:nth-child(even) {
                     padding-left: 35px;
                 }
-                
-                &-dot{
+
+                &-dot {
                     left: 0;
                 }
-                
-                &::before{
+
+                &::before {
                     left: 7px;
                     top: 9px;
                     // bottom: 115px;
                 }
+
                 @media (max-width: 440px) {
+
                     &:nth-child(odd),
-                    &:nth-child(even){
+                    &:nth-child(even) {
                         padding-left: 0;
                     }
-                    &-dot{
+
+                    &-dot {
                         display: none;
                     }
-                    &::before{
+
+                    &::before {
                         display: none;
                     }
                 }
@@ -245,16 +254,20 @@ nav {
     background-color: #5e5b5b;
     display: flex;
     padding: 40px;
-    
+    flex-direction: column;
+    text-align: center;
+
+    &-title {
+        font-size: 40px;
+        margin: 0px 0px 20px 0px;
+    }
+
     &-toolbox {
         padding: 12px;
-        width: 100%;
         display: flex;
         justify-content: space-around;
-        // box-shadow: rgb(126 206 211) 0px 0px 14px 8px;
 
         &-card {
-            // border: 3px solid pink;
             height: 150px;
             width: 150px;
             border-radius: 50%;
@@ -263,20 +276,33 @@ nav {
             justify-content: center;
             align-content: center;
             text-align: center;
-            // box-shadow: rgb(126 206 211) 0px 0px 14px 8px;
-            
+            box-shadow: rgb(126, 206, 211) 0px 0px 14px 8px;
+            margin: 8px;
+
             &-logo {
                 font-size: 64px;
             }
         }
-        @media (max-width:441px){
+
+        @media (max-width:760px) {
+            box-shadow: rgb(126, 206, 211) 0px 0px 14px 8px;
+
+            &-card {
+                box-shadow: none;
+            }
+
+        }
+
+        @media (max-width:441px) {
             flex-direction: column;
             align-items: center;
-            
-            &-card{
+            box-shadow: none;
+
+            &-card {
                 margin: 12px;
+                box-shadow: rgb(126, 206, 211) 0px 0px 14px 8px;
             }
         }
     }
- 
+
 }
