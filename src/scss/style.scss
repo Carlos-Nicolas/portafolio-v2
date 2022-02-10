@@ -176,28 +176,107 @@ nav {
                 margin: 6px 0 4px;
             }
 
+            &::before {
+                content: "";
+                position: absolute;
+                width: 2px;
+                height: 100%;
+                background-color: $title-color-font;
+                @include calc(left, '50% - 1px');
+                margin-bottom: 20px;
+            }
+
+
             &:nth-last-child {
                 padding-bottom: 0;
+            }
+
+            @media (max-width: 760px) {
+                margin-bottom: 20px;
+
+                &:nth-child(odd){
+                    padding-right: 0;
+                    text-align: left;
+                }
+
+                &:nth-child(odd),
+                &:nth-child(even){
+                    padding-left: 35px;
+                }
+                
+                &-dot{
+                    left: 0;
+                }
+                
+                &::before{
+                    left: 7px;
+                    top: 9px;
+                    // bottom: 115px;
+                }
+                @media (max-width: 440px) {
+                    &:nth-child(odd),
+                    &:nth-child(even){
+                        padding-left: 0;
+                    }
+                    &-dot{
+                        display: none;
+                    }
+                    &::before{
+                        display: none;
+                    }
+                }
             }
         }
 
     }
-    &::before{
-        content: "";
-        position: absolute;
-        width: 2px;
-        // height: 100%;
-        background-color: $title-color-font;
-        @include calc( left, '50% - 1px');
-        // margin-bottom: 20px;
-    }
+
+    // &::before{
+    //     content: "";
+    //     position: absolute;
+    //     width: 2px;
+    //     // height: 100%;
+    //     background-color: $title-color-font;
+    //     @include calc( left, '50% - 1px');
+    //     // margin-bottom: 20px;
+    // }
 }
 
-.skills{
+.skills {
     background-color: #5e5b5b;
     display: flex;
     padding: 40px;
-    &-card{
-        border: 1px solid pink;
+    
+    &-toolbox {
+        padding: 12px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        // box-shadow: rgb(126 206 211) 0px 0px 14px 8px;
+
+        &-card {
+            // border: 3px solid pink;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            // box-shadow: rgb(126 206 211) 0px 0px 14px 8px;
+            
+            &-logo {
+                font-size: 64px;
+            }
+        }
+        @media (max-width:441px){
+            flex-direction: column;
+            align-items: center;
+            
+            &-card{
+                margin: 12px;
+            }
+        }
     }
+ 
 }

@@ -202,29 +202,103 @@ nav ul li:active {
 }
 
 /* line 179, src/scss/style.scss */
-#About-me .timeline-item:nth-last-child {
-  padding-bottom: 0;
-}
-
-/* line 185, src/scss/style.scss */
-#About-me::before {
+#About-me .timeline-item::before {
   content: "";
   position: absolute;
   width: 2px;
+  height: 100%;
   background-color: #ff2b06;
   left: calc(50% - 1px);
   left: -moz-calc(50% - 1px);
   left: -webkit-calc(50% - 1px);
+  margin-bottom: 20px;
 }
 
-/* line 196, src/scss/style.scss */
+/* line 190, src/scss/style.scss */
+#About-me .timeline-item:nth-last-child {
+  padding-bottom: 0;
+}
+
+@media (max-width: 760px) {
+  /* line 131, src/scss/style.scss */
+  #About-me .timeline-item {
+    margin-bottom: 20px;
+  }
+  /* line 197, src/scss/style.scss */
+  #About-me .timeline-item:nth-child(odd) {
+    padding-right: 0;
+    text-align: left;
+  }
+  /* line 202, src/scss/style.scss */
+  #About-me .timeline-item:nth-child(odd), #About-me .timeline-item:nth-child(even) {
+    padding-left: 35px;
+  }
+  /* line 207, src/scss/style.scss */
+  #About-me .timeline-item-dot {
+    left: 0;
+  }
+  /* line 211, src/scss/style.scss */
+  #About-me .timeline-item::before {
+    left: 7px;
+    top: 9px;
+  }
+}
+
+@media (max-width: 760px) and (max-width: 440px) {
+  /* line 217, src/scss/style.scss */
+  #About-me .timeline-item:nth-child(odd), #About-me .timeline-item:nth-child(even) {
+    padding-left: 0;
+  }
+  /* line 221, src/scss/style.scss */
+  #About-me .timeline-item-dot {
+    display: none;
+  }
+  /* line 224, src/scss/style.scss */
+  #About-me .timeline-item::before {
+    display: none;
+  }
+}
+
+/* line 244, src/scss/style.scss */
 .skills {
   background-color: #5e5b5b;
   display: flex;
   padding: 40px;
 }
 
-/* line 200, src/scss/style.scss */
-.skills-card {
-  border: 1px solid pink;
+/* line 249, src/scss/style.scss */
+.skills-toolbox {
+  padding: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* line 256, src/scss/style.scss */
+.skills-toolbox-card {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+/* line 268, src/scss/style.scss */
+.skills-toolbox-card-logo {
+  font-size: 64px;
+}
+
+@media (max-width: 441px) {
+  /* line 249, src/scss/style.scss */
+  .skills-toolbox {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 276, src/scss/style.scss */
+  .skills-toolbox-card {
+    margin: 12px;
+  }
 }
