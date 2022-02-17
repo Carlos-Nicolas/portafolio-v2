@@ -1,20 +1,21 @@
+@import url(animate.css);
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
-/* line 7, src/scss/style.scss */
+/* line 9, src/scss/style.scss */
 html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* line 12, src/scss/style.scss */
+/* line 14, src/scss/style.scss */
 body {
   margin: 0px;
 }
 
-/* line 16, src/scss/style.scss */
+/* line 18, src/scss/style.scss */
 h3 {
   margin: 0;
 }
 
-/* line 20, src/scss/style.scss */
+/* line 22, src/scss/style.scss */
 nav {
   background-color: #000000;
   width: 100vw;
@@ -28,20 +29,20 @@ nav {
   z-index: 9999;
 }
 
-/* line 32, src/scss/style.scss */
+/* line 34, src/scss/style.scss */
 nav h3 {
   color: #ff2b06;
   padding: 12px;
 }
 
-/* line 36, src/scss/style.scss */
+/* line 38, src/scss/style.scss */
 nav h3 i {
   display: inline;
   vertical-align: middle;
   font-size: 18px;
 }
 
-/* line 43, src/scss/style.scss */
+/* line 45, src/scss/style.scss */
 nav ul {
   display: flex;
   list-style: none;
@@ -49,28 +50,28 @@ nav ul {
   padding: inherit;
 }
 
-/* line 50, src/scss/style.scss */
+/* line 52, src/scss/style.scss */
 nav ul li {
   padding: 12px;
 }
 
-/* line 53, src/scss/style.scss */
+/* line 55, src/scss/style.scss */
 nav ul li a {
   color: #ffffff;
   text-decoration: none;
 }
 
-/* line 58, src/scss/style.scss */
+/* line 60, src/scss/style.scss */
 nav ul li:hover {
   background-color: #d39f7e;
 }
 
-/* line 62, src/scss/style.scss */
+/* line 64, src/scss/style.scss */
 nav ul li:active {
   background-color: #333333;
 }
 
-/* line 70, src/scss/style.scss */
+/* line 72, src/scss/style.scss */
 #principal {
   height: 100%;
   width: 100%;
@@ -81,7 +82,7 @@ nav ul li:active {
   background-color: #000000;
 }
 
-/* line 82, src/scss/style.scss */
+/* line 84, src/scss/style.scss */
 #principal .card-presentation {
   height: 400px;
   width: 300px;
@@ -94,7 +95,7 @@ nav ul li:active {
   box-shadow: 0px 0px 14px 8px #D39F7E;
 }
 
-/* line 93, src/scss/style.scss */
+/* line 95, src/scss/style.scss */
 #principal .card-presentation img {
   width: 150px;
   height: 150px;
@@ -102,13 +103,13 @@ nav ul li:active {
   object-fit: cover;
 }
 
-/* line 100, src/scss/style.scss */
+/* line 102, src/scss/style.scss */
 #principal .card-presentation h3,
 #principal .card-presentation h4 {
   color: #ff2b06;
 }
 
-/* line 105, src/scss/style.scss */
+/* line 107, src/scss/style.scss */
 #principal .card-presentation > ul {
   list-style: none;
   display: flex;
@@ -118,24 +119,24 @@ nav ul li:active {
   margin: 0%;
 }
 
-/* line 113, src/scss/style.scss */
+/* line 115, src/scss/style.scss */
 #principal .card-presentation > ul li {
   text-decoration: none;
   font-size: 20px;
 }
 
-/* line 117, src/scss/style.scss */
+/* line 119, src/scss/style.scss */
 #principal .card-presentation > ul li a {
   color: #ff2b06;
 }
 
-/* line 126, src/scss/style.scss */
+/* line 128, src/scss/style.scss */
 #About-me {
   background-color: #202020;
   padding: 60px;
 }
 
-/* line 130, src/scss/style.scss */
+/* line 132, src/scss/style.scss */
 #About-me .timeline {
   margin: auto;
   display: flex;
@@ -143,14 +144,14 @@ nav ul li:active {
   position: relative;
 }
 
-/* line 136, src/scss/style.scss */
+/* line 138, src/scss/style.scss */
 #About-me .timeline-item {
   padding-bottom: 40px;
   position: relative;
   color: #ffffff;
 }
 
-/* line 141, src/scss/style.scss */
+/* line 143, src/scss/style.scss */
 #About-me .timeline-item:nth-child(odd) {
   text-align: right;
   padding-right: calc(50% + 30px);
@@ -158,7 +159,7 @@ nav ul li:active {
   padding-right: -webkit-calc(50% + 30px);
 }
 
-/* line 146, src/scss/style.scss */
+/* line 148, src/scss/style.scss */
 #About-me .timeline-item:nth-child(even) {
   text-align: left;
   padding-left: calc(50% + 30px);
@@ -166,26 +167,26 @@ nav ul li:active {
   padding-left: -webkit-calc(50% + 30px);
 }
 
-/* line 151, src/scss/style.scss */
+/* line 153, src/scss/style.scss */
 #About-me .timeline-item-content {
   padding: 15px;
   border-radius: 20px;
   box-shadow: 0px 0px 14px 8px #d39f7e;
 }
 
-/* line 156, src/scss/style.scss */
+/* line 158, src/scss/style.scss */
 #About-me .timeline-item-content > h3,
 #About-me .timeline-item-content h4 {
   margin: 0;
 }
 
-/* line 161, src/scss/style.scss */
+/* line 163, src/scss/style.scss */
 #About-me .timeline-item-content p {
   font-size: 14px;
   font-weight: normal;
 }
 
-/* line 167, src/scss/style.scss */
+/* line 169, src/scss/style.scss */
 #About-me .timeline-item-dot {
   height: 16px;
   width: 16px;
@@ -198,7 +199,7 @@ nav ul li:active {
   left: -webkit-calc(50% - 8px);
 }
 
-/* line 177, src/scss/style.scss */
+/* line 179, src/scss/style.scss */
 #About-me .timeline-item-date {
   font-size: 16px;
   color: #ff2b06;
@@ -206,7 +207,7 @@ nav ul li:active {
   margin: 6px 0 4px;
 }
 
-/* line 184, src/scss/style.scss */
+/* line 186, src/scss/style.scss */
 #About-me .timeline-item::before {
   content: "";
   position: absolute;
@@ -219,30 +220,30 @@ nav ul li:active {
   margin-bottom: 20px;
 }
 
-/* line 195, src/scss/style.scss */
+/* line 197, src/scss/style.scss */
 #About-me .timeline-item:nth-last-child {
   padding-bottom: 0;
 }
 
 @media (max-width: 760px) {
-  /* line 136, src/scss/style.scss */
+  /* line 138, src/scss/style.scss */
   #About-me .timeline-item {
     margin-bottom: 20px;
   }
-  /* line 202, src/scss/style.scss */
+  /* line 204, src/scss/style.scss */
   #About-me .timeline-item:nth-child(odd) {
     padding-right: 0;
     text-align: left;
   }
-  /* line 207, src/scss/style.scss */
+  /* line 209, src/scss/style.scss */
   #About-me .timeline-item:nth-child(odd), #About-me .timeline-item:nth-child(even) {
     padding-left: 35px;
   }
-  /* line 212, src/scss/style.scss */
+  /* line 214, src/scss/style.scss */
   #About-me .timeline-item-dot {
     left: 0;
   }
-  /* line 216, src/scss/style.scss */
+  /* line 218, src/scss/style.scss */
   #About-me .timeline-item::before {
     left: 7px;
     top: 9px;
@@ -250,21 +251,21 @@ nav ul li:active {
 }
 
 @media (max-width: 760px) and (max-width: 440px) {
-  /* line 224, src/scss/style.scss */
+  /* line 226, src/scss/style.scss */
   #About-me .timeline-item:nth-child(odd), #About-me .timeline-item:nth-child(even) {
     padding-left: 0;
   }
-  /* line 229, src/scss/style.scss */
+  /* line 231, src/scss/style.scss */
   #About-me .timeline-item-dot {
     display: none;
   }
-  /* line 233, src/scss/style.scss */
+  /* line 235, src/scss/style.scss */
   #About-me .timeline-item::before {
     display: none;
   }
 }
 
-/* line 253, src/scss/style.scss */
+/* line 255, src/scss/style.scss */
 .skills {
   background-color: #5e5b5b;
   display: flex;
@@ -273,20 +274,20 @@ nav ul li:active {
   text-align: center;
 }
 
-/* line 260, src/scss/style.scss */
+/* line 262, src/scss/style.scss */
 .skills-title {
   font-size: 40px;
   margin: 0px 0px 20px 0px;
 }
 
-/* line 265, src/scss/style.scss */
+/* line 267, src/scss/style.scss */
 .skills-toolbox {
   padding: 12px;
   display: flex;
   justify-content: space-around;
 }
 
-/* line 270, src/scss/style.scss */
+/* line 272, src/scss/style.scss */
 .skills-toolbox-card {
   height: 150px;
   width: 150px;
@@ -300,30 +301,30 @@ nav ul li:active {
   margin: 8px;
 }
 
-/* line 282, src/scss/style.scss */
+/* line 284, src/scss/style.scss */
 .skills-toolbox-card-logo {
   font-size: 64px;
 }
 
 @media (max-width: 760px) {
-  /* line 265, src/scss/style.scss */
+  /* line 267, src/scss/style.scss */
   .skills-toolbox {
     box-shadow: #7eced3 0px 0px 14px 8px;
   }
-  /* line 290, src/scss/style.scss */
+  /* line 292, src/scss/style.scss */
   .skills-toolbox-card {
     box-shadow: none;
   }
 }
 
 @media (max-width: 441px) {
-  /* line 265, src/scss/style.scss */
+  /* line 267, src/scss/style.scss */
   .skills-toolbox {
     flex-direction: column;
     align-items: center;
     box-shadow: none;
   }
-  /* line 301, src/scss/style.scss */
+  /* line 303, src/scss/style.scss */
   .skills-toolbox-card {
     margin: 12px;
     box-shadow: #7eced3 0px 0px 14px 8px;
