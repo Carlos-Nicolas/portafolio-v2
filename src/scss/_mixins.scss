@@ -1,26 +1,28 @@
-@mixin calc ($property, $expression){
+@mixin calc ($property, $expression) {
     #{$property}: calc(#{$expression});
     #{$property}: -moz-calc(#{$expression});
     #{$property}: -webkit-calc(#{$expression});
 
 }
 
+// enrtada de derecha al centro
 @keyframes mover {
-    0%{
-        transform:translate(230%);
-        
-    
-   }
-    100%{
-          transform:translate(0%);
-          
-     }
+    0% {
+        transform: translate(230%);
+    }
+
+    100% {
+        transform: translate(0%);
+    }
 }
 
-
+// entrada de izquierda al centro
 @keyframes mover2 {
-   0%{
-             transform:translate(100%);
-    }
+    0% {
+        transform: translate(-230%);
     }
 
+    100% {
+        transform: translate(0%);
+    }
+}

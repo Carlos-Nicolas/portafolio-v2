@@ -10,15 +10,27 @@ window.addEventListener('scroll' , function () {
 
 })
 
+window.addEventListener('scroll', function (odd) {
+    let animacion2 = document.getElementsByClassName("timeline-item:nth-child(odd)")
+    let posicionObj2 = animacion.getBoundingClientRect().top;
+    console.log(posicionObj2);
+    let tamañoDepantalla = window.innerHeight/3;
+
+    if(posicionObj2 < tamañoDepantalla){
+        animacion2.style.animacion ="mover 1s ease-out"
+    }
+})
+
+
 
 window.addEventListener("scroll",function () {
-    let animacion2 = document.getElementsByClassName("timeline-item");
-    let posicionObj2 = animacion2.getBoundingClientRect().top;
+    let animacion3 = document.getElementsByClassName("timeline-item:nth-child(event)");
+    let posicionObj3 = animacion2.getBoundingClientRect().top;
     let tamañodepantalla = window.innerHeight/3;
-    console.log("objeto2 "+posicionObj2);
+    console.log("objeto3 "+posicionObj3);
     
-    if(posicionObj2 < tamañodepantalla){
-        animacion2.style.animation = " mover2 1s ease-out "
+    if(posicionObj3 < tamañodepantalla){
+        animacion2.style.animation = " mover3 1s ease-out "
     }
 
 })
