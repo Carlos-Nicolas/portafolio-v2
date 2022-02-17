@@ -1,7 +1,10 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
 @keyframes mover {
   0% {
-    transform: translate(200%);
+    transform: translate(230%);
+  }
+  100% {
+    transform: translate(0%);
   }
 }
 

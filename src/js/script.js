@@ -15,7 +15,8 @@ window.addEventListener("scroll",function () {
     let animacion2 = document.getElementsByClassName("timeline-item");
     let posicionObj2 = animacion2.getBoundingClientRect().top;
     let tamañodepantalla = window.innerHeight/3;
-
+    console.log("objeto2 "+posicionObj2);
+    
     if(posicionObj2 < tamañodepantalla){
         animacion2.style.animation = " mover2 1s ease-out "
     }
