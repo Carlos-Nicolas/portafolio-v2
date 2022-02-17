@@ -1,3 +1,7 @@
+
+
+
+// entrada de derecha al centro de card
 window.addEventListener('scroll' , function () {
  let animacion = document.getElementById("card-presentation");
  let posicionObj1 = animacion.getBoundingClientRect().top;
@@ -9,7 +13,7 @@ window.addEventListener('scroll' , function () {
  }
 
 })
-
+// entrada de izquierda al centro  carrer
 window.addEventListener('scroll', function (odd) {
     let animacion2 = document.getElementsByClassName("timeline-item:nth-child(odd)")
     let posicionObj2 = animacion.getBoundingClientRect().top;
@@ -22,7 +26,7 @@ window.addEventListener('scroll', function (odd) {
 })
 
 
-
+// entrada de derecha al centro carrer 
 window.addEventListener("scroll",function () {
     let animacion3 = document.getElementsByClassName("timeline-item:nth-child(event)");
     let posicionObj3 = animacion2.getBoundingClientRect().top;
@@ -30,7 +34,7 @@ window.addEventListener("scroll",function () {
     console.log("objeto3 "+posicionObj3);
     
     if(posicionObj3 < tamañodepantalla){
-        animacion2.style.animation = " mover3 1s ease-out "
+        animacion2.style.animation = " mover 1s ease-out "
     }
 
 })
