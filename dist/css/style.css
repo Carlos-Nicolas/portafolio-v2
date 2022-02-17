@@ -1,21 +1,32 @@
-@import url(animate.css);
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+@keyframes mover {
+  0% {
+    transform: translate(200%);
+  }
+}
+
+@keyframes mover2 {
+  0% {
+    transform: translate(100%);
+  }
+}
+
 /* line 9, src/scss/style.scss */
 html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* line 14, src/scss/style.scss */
+/* line 13, src/scss/style.scss */
 body {
   margin: 0px;
 }
 
-/* line 18, src/scss/style.scss */
+/* line 17, src/scss/style.scss */
 h3 {
   margin: 0;
 }
 
-/* line 22, src/scss/style.scss */
+/* line 21, src/scss/style.scss */
 nav {
   background-color: #000000;
   width: 100vw;
@@ -29,20 +40,20 @@ nav {
   z-index: 9999;
 }
 
-/* line 34, src/scss/style.scss */
+/* line 33, src/scss/style.scss */
 nav h3 {
   color: #ff2b06;
   padding: 12px;
 }
 
-/* line 38, src/scss/style.scss */
+/* line 37, src/scss/style.scss */
 nav h3 i {
   display: inline;
   vertical-align: middle;
   font-size: 18px;
 }
 
-/* line 45, src/scss/style.scss */
+/* line 44, src/scss/style.scss */
 nav ul {
   display: flex;
   list-style: none;
@@ -50,28 +61,28 @@ nav ul {
   padding: inherit;
 }
 
-/* line 52, src/scss/style.scss */
+/* line 51, src/scss/style.scss */
 nav ul li {
   padding: 12px;
 }
 
-/* line 55, src/scss/style.scss */
+/* line 54, src/scss/style.scss */
 nav ul li a {
   color: #ffffff;
   text-decoration: none;
 }
 
-/* line 60, src/scss/style.scss */
+/* line 59, src/scss/style.scss */
 nav ul li:hover {
   background-color: #d39f7e;
 }
 
-/* line 64, src/scss/style.scss */
+/* line 63, src/scss/style.scss */
 nav ul li:active {
   background-color: #333333;
 }
 
-/* line 72, src/scss/style.scss */
+/* line 71, src/scss/style.scss */
 #principal {
   height: 100%;
   width: 100%;
@@ -82,7 +93,7 @@ nav ul li:active {
   background-color: #000000;
 }
 
-/* line 84, src/scss/style.scss */
+/* line 83, src/scss/style.scss */
 #principal .card-presentation {
   height: 400px;
   width: 300px;
@@ -93,9 +104,11 @@ nav ul li:active {
   align-items: center;
   border-radius: 20px;
   box-shadow: 0px 0px 14px 8px #D39F7E;
+  animation: backInDown;
+  animation-duration: 1s;
 }
 
-/* line 95, src/scss/style.scss */
+/* line 98, src/scss/style.scss */
 #principal .card-presentation img {
   width: 150px;
   height: 150px;
@@ -103,13 +116,13 @@ nav ul li:active {
   object-fit: cover;
 }
 
-/* line 102, src/scss/style.scss */
+/* line 105, src/scss/style.scss */
 #principal .card-presentation h3,
 #principal .card-presentation h4 {
   color: #ff2b06;
 }
 
-/* line 107, src/scss/style.scss */
+/* line 110, src/scss/style.scss */
 #principal .card-presentation > ul {
   list-style: none;
   display: flex;
@@ -119,24 +132,24 @@ nav ul li:active {
   margin: 0%;
 }
 
-/* line 115, src/scss/style.scss */
+/* line 118, src/scss/style.scss */
 #principal .card-presentation > ul li {
   text-decoration: none;
   font-size: 20px;
 }
 
-/* line 119, src/scss/style.scss */
+/* line 122, src/scss/style.scss */
 #principal .card-presentation > ul li a {
   color: #ff2b06;
 }
 
-/* line 128, src/scss/style.scss */
+/* line 131, src/scss/style.scss */
 #About-me {
   background-color: #202020;
   padding: 60px;
 }
 
-/* line 132, src/scss/style.scss */
+/* line 135, src/scss/style.scss */
 #About-me .timeline {
   margin: auto;
   display: flex;
@@ -144,14 +157,14 @@ nav ul li:active {
   position: relative;
 }
 
-/* line 138, src/scss/style.scss */
+/* line 141, src/scss/style.scss */
 #About-me .timeline-item {
   padding-bottom: 40px;
   position: relative;
   color: #ffffff;
 }
 
-/* line 143, src/scss/style.scss */
+/* line 146, src/scss/style.scss */
 #About-me .timeline-item:nth-child(odd) {
   text-align: right;
   padding-right: calc(50% + 30px);
@@ -159,7 +172,7 @@ nav ul li:active {
   padding-right: -webkit-calc(50% + 30px);
 }
 
-/* line 148, src/scss/style.scss */
+/* line 151, src/scss/style.scss */
 #About-me .timeline-item:nth-child(even) {
   text-align: left;
   padding-left: calc(50% + 30px);
@@ -167,26 +180,26 @@ nav ul li:active {
   padding-left: -webkit-calc(50% + 30px);
 }
 
-/* line 153, src/scss/style.scss */
+/* line 156, src/scss/style.scss */
 #About-me .timeline-item-content {
   padding: 15px;
   border-radius: 20px;
   box-shadow: 0px 0px 14px 8px #d39f7e;
 }
 
-/* line 158, src/scss/style.scss */
+/* line 161, src/scss/style.scss */
 #About-me .timeline-item-content > h3,
 #About-me .timeline-item-content h4 {
   margin: 0;
 }
 
-/* line 163, src/scss/style.scss */
+/* line 166, src/scss/style.scss */
 #About-me .timeline-item-content p {
   font-size: 14px;
   font-weight: normal;
 }
 
-/* line 169, src/scss/style.scss */
+/* line 172, src/scss/style.scss */
 #About-me .timeline-item-dot {
   height: 16px;
   width: 16px;
@@ -199,7 +212,7 @@ nav ul li:active {
   left: -webkit-calc(50% - 8px);
 }
 
-/* line 179, src/scss/style.scss */
+/* line 182, src/scss/style.scss */
 #About-me .timeline-item-date {
   font-size: 16px;
   color: #ff2b06;
@@ -207,7 +220,7 @@ nav ul li:active {
   margin: 6px 0 4px;
 }
 
-/* line 186, src/scss/style.scss */
+/* line 189, src/scss/style.scss */
 #About-me .timeline-item::before {
   content: "";
   position: absolute;
@@ -220,30 +233,30 @@ nav ul li:active {
   margin-bottom: 20px;
 }
 
-/* line 197, src/scss/style.scss */
+/* line 200, src/scss/style.scss */
 #About-me .timeline-item:nth-last-child {
   padding-bottom: 0;
 }
 
 @media (max-width: 760px) {
-  /* line 138, src/scss/style.scss */
+  /* line 141, src/scss/style.scss */
   #About-me .timeline-item {
     margin-bottom: 20px;
   }
-  /* line 204, src/scss/style.scss */
+  /* line 207, src/scss/style.scss */
   #About-me .timeline-item:nth-child(odd) {
     padding-right: 0;
     text-align: left;
   }
-  /* line 209, src/scss/style.scss */
+  /* line 212, src/scss/style.scss */
   #About-me .timeline-item:nth-child(odd), #About-me .timeline-item:nth-child(even) {
     padding-left: 35px;
   }
-  /* line 214, src/scss/style.scss */
+  /* line 217, src/scss/style.scss */
   #About-me .timeline-item-dot {
     left: 0;
   }
-  /* line 218, src/scss/style.scss */
+  /* line 221, src/scss/style.scss */
   #About-me .timeline-item::before {
     left: 7px;
     top: 9px;
@@ -251,21 +264,21 @@ nav ul li:active {
 }
 
 @media (max-width: 760px) and (max-width: 440px) {
-  /* line 226, src/scss/style.scss */
+  /* line 229, src/scss/style.scss */
   #About-me .timeline-item:nth-child(odd), #About-me .timeline-item:nth-child(even) {
     padding-left: 0;
   }
-  /* line 231, src/scss/style.scss */
+  /* line 234, src/scss/style.scss */
   #About-me .timeline-item-dot {
     display: none;
   }
-  /* line 235, src/scss/style.scss */
+  /* line 238, src/scss/style.scss */
   #About-me .timeline-item::before {
     display: none;
   }
 }
 
-/* line 255, src/scss/style.scss */
+/* line 258, src/scss/style.scss */
 .skills {
   background-color: #5e5b5b;
   display: flex;
@@ -274,20 +287,20 @@ nav ul li:active {
   text-align: center;
 }
 
-/* line 262, src/scss/style.scss */
+/* line 265, src/scss/style.scss */
 .skills-title {
   font-size: 40px;
   margin: 0px 0px 20px 0px;
 }
 
-/* line 267, src/scss/style.scss */
+/* line 270, src/scss/style.scss */
 .skills-toolbox {
   padding: 12px;
   display: flex;
   justify-content: space-around;
 }
 
-/* line 272, src/scss/style.scss */
+/* line 275, src/scss/style.scss */
 .skills-toolbox-card {
   height: 150px;
   width: 150px;
@@ -301,30 +314,30 @@ nav ul li:active {
   margin: 8px;
 }
 
-/* line 284, src/scss/style.scss */
+/* line 287, src/scss/style.scss */
 .skills-toolbox-card-logo {
   font-size: 64px;
 }
 
 @media (max-width: 760px) {
-  /* line 267, src/scss/style.scss */
+  /* line 270, src/scss/style.scss */
   .skills-toolbox {
     box-shadow: #7eced3 0px 0px 14px 8px;
   }
-  /* line 292, src/scss/style.scss */
+  /* line 295, src/scss/style.scss */
   .skills-toolbox-card {
     box-shadow: none;
   }
 }
 
 @media (max-width: 441px) {
-  /* line 267, src/scss/style.scss */
+  /* line 270, src/scss/style.scss */
   .skills-toolbox {
     flex-direction: column;
     align-items: center;
     box-shadow: none;
   }
-  /* line 303, src/scss/style.scss */
+  /* line 306, src/scss/style.scss */
   .skills-toolbox-card {
     margin: 12px;
     box-shadow: #7eced3 0px 0px 14px 8px;

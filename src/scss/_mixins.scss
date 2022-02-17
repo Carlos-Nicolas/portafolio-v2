@@ -4,3 +4,17 @@
     #{$property}: -webkit-calc(#{$expression});
 
 }
+
+@keyframes mover {
+    0%{
+        transform: translate(200%);
+    }
+}
+
+@keyframes mover2 {
+    0%{
+        transform: translate(100%);
+    }
+    
+}
+
