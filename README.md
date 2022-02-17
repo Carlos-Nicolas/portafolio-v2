@@ -82,7 +82,47 @@ como queda con la funcion:
 cons rta = totals.reduce((sum,element) => sum + element , 0);
 
 ```
+## flat
+
+convierte una  coleccionde arrays en un solo array dependiendo de la profundidad que se le indique
+
+```sh
+
+ let colection = [1,2,[3,4],5,6,7];
+ ```
+a plicando el metodo flat para unir el array interno y dejar solo un array dependiendo del nivel de excabacion se le va a indicar en los parentecis a la funcion.
 
 
+```sh
+ let aplanado = colection.flat();
+```
+### resultado
+
+```sh
+
+aplanado =[1,2,3,4,5,6,7];
+
+```
+
+## concat
+
+hay que recordad que la concatenacion es solamente la union de dos objeto pueden ser dos strings o un string y una varable la forma mas comun de ver  una concatenacion  es con el simbolo de "+".
+
+```sh
+const array1 = [1,2,3];
+let array2 = [4,5,6];
+```
+
+aplicacion de concat.
+
+```sh
+ let arrayTotal = array1.concat(array2);
+```
+
+### resultado
+
+```sh
+arrayTotal =[1,2,3,4,5,6]
+```
 
 
