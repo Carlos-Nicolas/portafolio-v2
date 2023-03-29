@@ -29,6 +29,7 @@ nav {
     vertical-align: middle;
     position: fixed;
     z-index: 9999;
+    padding-right: 20px;
 
     h3 {
         color: $title-color-font;
@@ -46,10 +47,10 @@ nav {
         list-style: none;
         // margin: 10px;
         justify-content: center;
-        padding: inherit;
+        padding-right: 20px;
 
         li {
-            padding: 12px;
+            padding: 16px;
 
             a {
                 color: $primary-color-font;
